@@ -10,6 +10,7 @@ p{
     background-color: rgb(245, 240, 230);
     display: inline-block;
     scroll-margin-top: 200px;
+    padding: 10px;
 }
 
 .section2{
@@ -18,11 +19,14 @@ p{
     display: inline-block;
     width: 100%;
     scroll-margin-top: 140px;
+    padding: 10px;
+
 
 }
 
 .section2 img{
     margin: 20px;
+    max-width: 100%;
 }
 
 .section2 p{
@@ -99,3 +103,29 @@ li a:hover{
     overflow: scroll;
 }
 
+@media screen and (max-width: 800px) {
+    li{
+        display: none;
+    }
+    
+    .header img{
+        max-width: 75%;
+    }
+    
+    h1{
+        font-size: 24px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+
+    .text-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1px;
+        grid-auto-rows: minmax(100px, auto);
+        justify-items: center;
+    }
+  }
+  
